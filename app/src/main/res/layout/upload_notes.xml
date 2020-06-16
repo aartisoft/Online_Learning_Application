@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".upload.UploadNotes">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/notes_upload_toolbar"
+            layout="@layout/toolbar" />
+
+        <EditText
+            android:id="@+id/notes_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notes_upload_toolbar"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:autofillHints="@string/common_google_play_services_install_text"
+            android:background="@drawable/bg_mcq_ques"
+            android:gravity="center_horizontal"
+            android:hint="@string/title"
+            android:inputType="text"
+            android:maxLength="60"
+            android:minHeight="50dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/darkText"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/LinkHint"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/notes_title"
+            android:src="@drawable/youtubelinkhint"
+            android:contentDescription="@string/icon_desc" />
+
+        <EditText
+            android:id="@+id/VideoSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LinkHint"
+            android:layout_marginHorizontal="10dp"
+            android:hint="@string/video_link_key"
+            android:inputType="textFilter"
+            android:maxLength="20"
+            android:autofillHints="@string/common_google_play_services_enable_text" />
+
+        <EditText
+            android:id="@+id/notes_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/VideoSource"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginTop="5dp"
+            android:autofillHints="@string/common_google_play_services_install_text"
+            android:background="@drawable/bg_mcq_options"
+            android:gravity="start"
+            android:hint="@string/body"
+            android:inputType="textMultiLine"
+            android:maxLength="1000"
+            android:minHeight="250dp"
+            android:padding="10dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/darkText"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/uploadNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notes_body"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/btn_submit"
+            android:text="@string/upload"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

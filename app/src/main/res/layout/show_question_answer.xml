@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".show.ShowQuestionAnswer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/LongAQ_show_toolbar"
+            layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LongAQ_show_toolbar"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uploaded_by"
+                    android:textColor="@color/lightText" />
+
+                <TextView
+                    android:id="@+id/SLAQUploaderName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textColor="@color/darkText" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ShowLongQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_white_input"
+                android:gravity="start"
+                android:hint="@string/question_here"
+                android:padding="5dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/darkText"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor,RtlCompat" />
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adViewAQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                ads:adSize="MEDIUM_RECTANGLE"
+                ads:adUnitId="@string/ad_unit_id_banner" />
+
+
+            <TextView
+                android:id="@+id/ShowLongA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="start"
+                android:hint="@string/answer_here"
+                android:padding="5dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/darkText"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                tools:ignore="LabelFor" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

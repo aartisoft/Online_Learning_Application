@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".upload.UploadLongAQ">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/LongAQ_upload_toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LongAQ_upload_toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+                <EditText
+                    android:id="@+id/InputLongAQQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bg_mcq_ques"
+                    android:minHeight="150dp"
+                    android:textAlignment="textStart"
+                    android:hint="@string/question_here"
+                    android:gravity="start"
+                    android:textColor="@color/bgWhite"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    tools:ignore="LabelFor"
+                    android:autofillHints="@string/common_google_play_services_install_text"
+                    android:maxLength="200"
+                    android:inputType="textMultiLine" />
+
+                <EditText
+                    android:id="@+id/InputLongAQAnswer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bg_mcq_options"
+                    android:minHeight="250dp"
+                    android:textAlignment="textStart"
+                    android:hint="@string/answer_here"
+                    android:gravity="start"
+                    android:textColor="@color/darkText"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    tools:ignore="LabelFor"
+                    android:autofillHints="@string/common_google_play_services_install_text"
+                    android:maxLength="1800"
+                    android:inputType="textMultiLine"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="30dp">
+
+                    <Button
+                        android:id="@+id/LAQclearBtn"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_previous"
+                        android:text="@string/clear"
+                        android:textColor="@color/bgWhite"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:id="@+id/LAQuploadBtn"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/btn_next"
+                        android:text="@string/upload"
+                        android:textColor="@color/bgWhite"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/bgPrimary"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".SubCategory">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/homeToolbar"
+            layout="@layout/toolbar" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/bgWhite">
+
+            <TextView
+                android:id="@+id/TitleName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/darkText"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card View Section-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/SubCategoryRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewSubCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            ads:adSize="MEDIUM_RECTANGLE"
+            ads:adUnitId="@string/ad_unit_id_banner"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Self Study</string>
+    <string name="sign_in_text"><![CDATA[Sign in Using Email & Password]]></string>
+    <string name="email_id">Email ID</string>
+    <string name="enter_email">Enter your email Id</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="forget_password">Forget password ?</string>
+    <string name="click_here">Click Here</string>
+    <string name="log_in">Log In</string>
+    <string name="need_account">Don\'t have account ?</string>
+    <string name="enter_old_email">Enter old E-mail</string>
+    <string name="reset_password">Reset password</string>
+    <string name="create_account">Create a new Account</string>
+    <string name="display_name">Display Name</string>
+    <string name="enter_full_name">Enter your full name here…</string>
+    <string name="create_account_btn">Create Account</string>
+    <string name="welcome">Welcome to</string>
+    <string name="icon_desc">Learning Engin Icon</string>
+    <string name="learning_engin">Self Study</string>
+    <string name="image_holder">Image Holder</string>
+    <string name="upload">Upload</string>
+    <string name="welcome_text">Welcome to our online Learning platform</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="logout">LogOut</string>
+    <string name="ad_unit_id_banner">ca-app-pub-7871723373838676/2425059303</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="uploaded_by">Uploaded By:-</string>
+    <string name="total_questions">Questions No.:-</string>
+    <string name="choose_answer">Choose Correct Option No:-</string>
+    <string name="_1st">1st</string>
+    <string name="_2nd">2nd</string>
+    <string name="_3rd">3rd</string>
+    <string name="_4th">4th</string>
+    <string name="clear">Clear</string>
+    <string name="next">next</string>
+    <string name="question_here">Question here</string>
+    <string name="answer_here">Answer here</string>
+    <string name="title">Title</string>
+    <string name="body">Body</string>
+    <string name="out_of">Out of</string>
+    <string name="score">Score</string>
+    <string name="done">Done</string>
+    <string name="full_name">Full Name</string>
+    <string name="new_status">New Status</string>
+    <string name="mob_number">Mob. Number</string>
+    <string name="update">Update</string>
+    <string name="teacher_account">Request for teacher\'s account (Upload Contents)</string>
+    <string name="under_development">This section is under development</string>
+    <string name="sorry_for_inconvenience">Sorry for inconvenience</string>
+    <string name="num_of_students">Num. of Students</string>
+    <string name="marks">Marks</string>
+    <string name="write_your_query">Write your query</string>
+    <string name="himanshumauri_hotmail_com">himanshumauri@hotmail.com</string>
+    <string name="our_e_mail_id">Our e-Mail ID :-</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="play_video">Play Video</string>
+    <string name="video_link_key"><![CDATA[Youtube link Key->Red Box Only(Optional)]]></string>
+
+
+</resources>

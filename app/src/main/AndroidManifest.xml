@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.himanshumauri.learning">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".OfflineFeature"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".menu.StudentsList" />
+        <activity android:name=".menu.StudentsPerformance" />
+        <activity android:name=".menu.UpdateProfile" />
+        <activity android:name=".menu.Profile" />
+        <activity android:name=".show.NotesTitle" />
+        <activity android:name=".show.ShowQuestionAnswer" />
+        <activity android:name=".show.MCQResult" />
+        <activity android:name=".show.ShowQuestion" />
+        <activity android:name=".show.ShowNotes" />
+        <activity android:name=".show.ShowMCQ" />
+        <activity android:name=".upload.UploadShortAQ" />
+        <activity android:name=".upload.UploadNotes" />
+        <activity android:name=".upload.UploadMCQ" />
+        <activity android:name=".upload.UploadLongAQ" />
+        <activity android:name=".show.ContentsShow" />
+        <activity android:name=".upload.ContentsUpload" />
+        <activity
+            android:name=".menu.ContactUs"
+            android:parentActivityName=".Home" />
+        <activity android:name=".menu.Settings" />
+        <activity android:name=".LastCategory" />
+        <activity android:name=".SubCategory" />
+        <activity android:name=".Category" />
+        <activity android:name=".login.Start" />
+        <activity android:name=".login.Register" />
+        <activity android:name=".login.ForgotPassword" />
+        <activity android:name=".login.Login" />
+        <activity android:name=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7871723373838676~3551983307" />
+
+    </application>
+
+
+</manifest>

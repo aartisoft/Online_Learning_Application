@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/bg_card_adapter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/HomeCategoryIv"
+            android:layout_width="150dp"
+            android:layout_height="190dp"
+            android:padding="5dp"
+            android:background="@drawable/bg_white_input"
+            android:src="@drawable/ic_image_holder"
+            android:contentDescription="@string/icon_desc"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/HomeCategoryTitleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/bgWhite"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:ellipsize = "marquee"
+                android:fadingEdge = "horizontal"
+                android:marqueeRepeatLimit = "marquee_forever"
+                android:scrollHorizontally = "true"
+                android:singleLine="true"
+                />
+            <TextView
+                android:id="@+id/HomeCategoryDescTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/bgWhite"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:ellipsize = "marquee"
+                android:fadingEdge = "horizontal"
+                android:marqueeRepeatLimit = "marquee_forever"
+                android:scrollHorizontally = "true"
+                android:singleLine="true"
+                />
+            <TextView
+                android:id="@+id/HomeCategoryTagsTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/bgWhite"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:ellipsize = "marquee"
+                android:fadingEdge = "horizontal"
+                android:marqueeRepeatLimit = "marquee_forever"
+                android:scrollHorizontally = "true"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
